@@ -1,7 +1,7 @@
 import test from 'ava'
 import Vue from 'vue'
 import serviceProvider from '../index.js'
-import Component from '../lib/components/Example.vue';
+import Component from '../lib/components/SuperAdvancedFeature.vue';
  
 test('foo', t => {
     t.pass()
@@ -11,10 +11,6 @@ test('bar', async t => {
     const bar = Promise.resolve('bar');
  
     t.is(await bar, 'bar')
-})
-
-test('service provider', async t => {
-    t.is(serviceProvider.register(), 'Registering Service Provider: Admin Module Test')
 })
 
 test('renders', t => {

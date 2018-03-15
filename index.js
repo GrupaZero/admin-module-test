@@ -5,11 +5,11 @@ export default {
         app.registerLauncher({
             path: 'super-advanced-feature',
             label: 'Super-Duper Advanced Feature'
-        }, resolve => require(['./lib/components/SuperAdvancedFeature.vue'], resolve))
+        }, () => import('./lib/components/SuperAdvancedFeature.vue'))
 
         app.registerLauncher({
             path: 'another-super-advanced-feature',
             label: 'Another Super-Duper Advanced Feature'
-        }, resolve => require(['./lib/components/AnotherSuperAdvancedFeature.vue'], resolve))
+        }, () => import('./lib/components/AnotherSuperAdvancedFeature.vue'))
     }
 }
