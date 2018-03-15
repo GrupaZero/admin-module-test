@@ -5,8 +5,11 @@
     </div>
 </template>
 <script>
+    import Translations from '../../locales.js'
     export default {
-
+        i18n: {
+            messages: Translations
+        }
     }
 </script>
 
