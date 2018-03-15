@@ -3,15 +3,15 @@ export default {
       console.log('Registering Service Provider: Admin Module Test')
 
       app.registerLauncher({
-          path: 'super-advanced-feature',
-          label: 'Super-Duper Advanced Feature'
-      }, () => import(/* webpackChunkName: "admin-module-test" */ './lib/components/SuperAdvancedFeature.vue'))
+          path: 'languages',
+          label: 'Languages'
+      }, () => import(/* webpackChunkName: "admin-module-test" */ './lib/components/Languages.vue'))
 
       app.registerLauncher({
-          path: 'another-super-advanced-feature',
-          label: 'Another Super-Duper Advanced Feature'
+          path: 'settings',
+          label: 'Settings'
       },
-      () => import(/* webpackChunkName: "admin-module-test" */  './lib/components/AnotherSuperAdvancedFeature.vue'),
+      () => import(/* webpackChunkName: "admin-module-test" */  './lib/components/Settings.vue'),
       [{
           path: 'child-component',
           name: 'child-component',

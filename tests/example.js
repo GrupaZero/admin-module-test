@@ -1,7 +1,7 @@
 import test from 'ava'
 import Vue from 'vue'
 import serviceProvider from '../index.js'
-import Component from '../lib/components/SuperAdvancedFeature.vue';
+import Component from '../lib/components/ChildComponent.vue';
  
 test('foo', t => {
     t.pass()
