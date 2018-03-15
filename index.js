@@ -10,6 +10,12 @@ export default {
         app.registerLauncher({
             path: 'another-super-advanced-feature',
             label: 'Another Super-Duper Advanced Feature'
-        }, () => import('./lib/components/AnotherSuperAdvancedFeature.vue'))
+        },
+        () => import('./lib/components/AnotherSuperAdvancedFeature.vue'),
+        [{
+            path: 'child-component',
+            name: 'child-component',
+            component: () => import('./lib/components/ChildComponent.vue')
+        }])
     }
 }
