@@ -3,12 +3,12 @@ export default {
       console.log('Registering Service Provider: Admin Module Test')
 
       app.registerLauncher({
-          path: 'languages',
+          path: '/languages',
           label: 'Languages'
       }, () => import(/* webpackChunkName: "admin-module-test" */ './lib/components/Languages.vue'))
 
       app.registerLauncher({
-          path: 'settings',
+          path: '/settings',
           label: 'Settings'
       },
       () => import(/* webpackChunkName: "admin-module-test" */  './lib/components/Settings.vue'),
