@@ -10,6 +10,7 @@
     import Translations from '../../locales.js'
     export default {
         i18n: {
+            fallbackLocale: 'en',
             messages: Translations
         }
     }
